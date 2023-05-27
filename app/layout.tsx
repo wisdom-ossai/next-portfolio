@@ -3,6 +3,9 @@ import { Inter, Montserrat } from "next/font/google";
 import Navbar from "./components/Navbar";
 import { cn } from "./lib/utils";
 import AppProviders from "./components/AppProviders";
+import Socials from "./components/Socials";
+import Email from "./components/Email";
+import AsideWrapper from "./components/AsideWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +38,22 @@ export default function RootLayout({
       <body className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white/75 antialiased">
         <AppProviders>
           <Navbar />
-          {children}
+          <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
+            <AsideWrapper
+              x={-10}
+              className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0"
+            >
+              <Socials />
+            </AsideWrapper>
+            <div className="h-[88vh] mx-auto mdl:p-4">{children}</div>
+            <AsideWrapper
+              x={10}
+              delay={0.8}
+              className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"
+            >
+              <Email />
+            </AsideWrapper>
+          </div>
         </AppProviders>
       </body>
     </html>

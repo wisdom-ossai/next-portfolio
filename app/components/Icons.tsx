@@ -1,6 +1,18 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, Sun, Moon, Laptop } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Sun,
+  Moon,
+  Laptop,
+  Github,
+  Facebook,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Mail,
+} from "lucide-react";
 
 export const Icons = {
   ChevronLeft,
@@ -8,6 +20,12 @@ export const Icons = {
   Sun,
   Moon,
   Laptop,
+  Github,
+  Facebook,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Mail,
 };
 
 export default Icons;

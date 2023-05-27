@@ -19,8 +19,14 @@ const ThemeToggler: React.FC<ThemeTogglerProps> = ({}) => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Icons.Sun className="rotate-0 scale-100 transition-all hover:text-slate-900 dark:-rotate-90 dark:scale-0 dark:text-slate-400 dark:hover:slate-100" />
-          <Icons.Moon className="absolute rotate-90 scale-0 transition-all hover:text-slate-900 dark:rotate-0 dark:scale-100 dark:text-slate-400 dark:hover:text-slate-100" />
+          <Icons.Sun
+            size={16}
+            className="rotate-0 scale-100 transition-all hover:text-slate-900 dark:-rotate-90 dark:scale-0 dark:text-slate-400 dark:hover:slate-100"
+          />
+          <Icons.Moon
+            size={16}
+            className="absolute rotate-90 scale-0 transition-all hover:text-slate-900 dark:rotate-0 dark:scale-100 dark:text-slate-400 dark:hover:text-slate-100"
+          />
           <span className="sr-only">Theme Toggler</span>
         </Button>
       </DropdownMenuTrigger>
