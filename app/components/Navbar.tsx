@@ -30,16 +30,16 @@ const Navbar = () => {
         <div className="mdl:hidden flex gap-4 text-[13px] items-center">
           <ThemeToggler />
 
-          <div className="w-6 h-6 flex flex-col justify-between items-center text-4xl text-slate-900 dark:text-textGreen cursor-pointer overflow-hidden group">
-            <span className="w-full h-[2px] bg-slate-900 dark:bg-textGreen inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
-            <span className="w-full h-[2px] bg-slate-900 dark:bg-textGreen inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
-            <span className="w-full h-[2px] bg-slate-900 dark:bg-textGreen inline-flex transform translate-x-3 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
+          <div className="w-6 h-6 flex flex-col justify-between items-center text-4xl text-primary dark:text-textGreen cursor-pointer overflow-hidden group">
+            <span className="w-full h-[2px] bg-primary dark:bg-textGreen inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
+            <span className="w-full h-[2px] bg-primary dark:bg-textGreen inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
+            <span className="w-full h-[2px] bg-primary dark:bg-textGreen inline-flex transform translate-x-3 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
           </div>
         </div>
         <div className="hidden mdl:flex gap-4 text-[13px]">
           <Link
             href="#home"
-            className="flex items-center gap-1 font-medium hover:text-textGreen cursor-pointer duration-300 nav-link"
+            className="flex items-center gap-1 font-medium hover:text-primary dark:hover:text-textGreen cursor-pointer duration-300 nav-link"
           >
             <motion.span
               initial={{ y: -10, opacity: 0 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="#about"
-            className="flex items-center gap-1 font-medium hover:text-textGreen cursor-pointer duration-300 nav-link"
+            className="flex items-center gap-1 font-medium hover:text-primary dark:hover:text-textGreen cursor-pointer duration-300 nav-link"
           >
             <motion.span
               initial={{ y: -10, opacity: 0 }}
@@ -63,7 +63,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="#contact"
-            className="flex items-center gap-1 font-medium hover:text-textGreen cursor-pointer duration-300 nav-link"
+            className="flex items-center gap-1 font-medium hover:text-primary dark:hover:text-textGreen cursor-pointer duration-300 nav-link"
           >
             <motion.span
               initial={{ y: -10, opacity: 0 }}
@@ -75,7 +75,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="#contact"
-            className="flex items-center gap-1 font-medium hover:text-textGreen cursor-pointer duration-300 nav-link"
+            className="flex items-center gap-1 font-medium hover:text-primary dark:hover:text-textGreen cursor-pointer duration-300 nav-link"
           >
             <motion.span
               initial={{ y: -10, opacity: 0 }}
@@ -90,7 +90,7 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
           >
-            <Button className="border-textGreen" size="sm">
+            <Button variant="bordered" size="sm">
               Resume
             </Button>
           </motion.div>

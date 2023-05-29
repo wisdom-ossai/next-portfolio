@@ -12,6 +12,7 @@ import {
   Instagram,
   Twitter,
   Mail,
+  CheckCircle,
 } from "lucide-react";
 
 export const Icons = {
@@ -26,6 +27,7 @@ export const Icons = {
   Instagram,
   Twitter,
   Mail,
+  CheckCircle,
 };
 
 export default Icons;

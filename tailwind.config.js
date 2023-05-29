@@ -42,7 +42,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
-        // mono: ["var(--font-inter)", ...fontFamily.mono],
+        mono: ["var(--font-inter)", ...fontFamily.mono],
         bodyFont: ["var(--font-montserrat)"],
         titleFont: ["var(--font-inter)"],
       },
@@ -56,6 +56,10 @@ module.exports = {
         textGreen: "#64FFDA",
         textLight: "#CCd6f6",
         textDark: "#8892B0",
+        primary: "#175fff",
+        "primary-light": "#89A9FF",
+        "primary-dark": "#0033B9",
+        secondary: "#FFB800",
         hoverColor: "rgba(100, 255, 218, 0.1)",
         "body-color": {
           50: "#E6EAF2",
