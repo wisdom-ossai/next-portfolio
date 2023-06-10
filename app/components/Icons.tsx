@@ -13,6 +13,7 @@ import {
   Twitter,
   Mail,
   CheckCircle,
+  ThumbsUp,
 } from "lucide-react";
 
 export const Icons = {
@@ -28,6 +29,7 @@ export const Icons = {
   Twitter,
   Mail,
   CheckCircle,
+  ThumbsUp,
 };
 
 export default Icons;

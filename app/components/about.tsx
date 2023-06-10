@@ -11,7 +11,7 @@ const About = () => {
       id="about"
       className="w-full py-10 mdl:py-24 lgl:py-32 flex flex-col gap-8 "
     >
-      <SectionTitle name="About" />
+      <SectionTitle name="About" num="01." />
 
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
